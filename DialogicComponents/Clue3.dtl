@@ -1,0 +1,18 @@
+[style name="MyStyle"]
+join InvestigatorDillon 0
+InvestigatorDillon: I found a clue.
+[sound path="res://Assets/Audio/SFX/LightsOutFindClue.ogg" volume="0.0"]
+InvestigatorDillon: Something or somebody seems to have been using the machinery in this room and the next to conduct all kinds of vile experiments on the employees.
+InvestigatorDillon: I don’t think that pressure plate on the floor will ever be cleanable after this mess.
+InvestigatorDillon: I don’t even want to try to comprehend what might have happened to them, but the thing that did this must be terrifying.
+InvestigatorDillon: Also, I just recovered a viscera covered battery from the pressure plate mechanism. I hope it still works.
+set {battery_count} += 1
+[sound path="res://Assets/Audio/SFX/BatteryLoad.ogg" volume="0.0"]
+InvestigatorDillon: I have {battery_count} spare batteries.
+leave InvestigatorDillon
+set {clues_found} += 1
+if {clues_found} >= 4:
+	jump EnoughClues/
+else:
+	...
+	[end_timeline]

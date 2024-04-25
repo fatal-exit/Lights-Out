@@ -1,0 +1,12 @@
+set {battery_count} = 1
+[style name="MyStyle"]
+The facility now remains dark and in dissaray. The air bites with an icy chill and the scent of viscera emanates from the gloomy shadows.
+A man donning a high visibilty jacket, goggles and an industrial grade flashlight surveys his surroundings.
+join InvestigatorDillon 0
+InvestigatorDillon (Default): Darn, no signs of life. What happened here must have been a truly terrible deed. I need to stay sharp and keep track of my stock of batteries, I don't want to end up stuck in the dark with whatever might be in here with me.
+InvestigatorDillon: I have {battery_count} spare batteries.
+InvestigatorDillon: My battery power is my life force, if I am to run out, I will likely never be found again.
+leave InvestigatorDillon
+Investigator Dillon continues down the hall, goggled eyes alert and ready to spot any danger from afar. For as long as he could see in this encroaching darkness, he would be safe.
+...
+[end_timeline]

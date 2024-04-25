@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0.996078, 0.960784, 0.682353, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Default",
+"description": "",
+"display_name": "Investigator Dillon",
+"mirror": true,
+"nicknames": [""],
+"offset": Vector2(120, -96),
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://Assets/GFX/PlayerPortrait.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+}
+},
+"scale": 2.0
+}

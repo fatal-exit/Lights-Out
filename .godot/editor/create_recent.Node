@@ -1,0 +1,14 @@
+AudioStreamPlayer
+Timer
+Sprite2D
+AnimationPlayer
+Marker2D
+CanvasModulate
+Label
+TextureRect
+Control
+CanvasLayer
+MarginContainer
+Container
+Node2D
+CollisionShape2D

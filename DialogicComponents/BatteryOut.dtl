@@ -1,0 +1,19 @@
+[style name="MyStyle"]
+The flashlight flickers, then goes out.
+join InvestigatorDillon 0
+InvestigatorDillon: Darn it! My battery has run dry. Do I have a replacement, or am I doomed to this decrepit darkness?
+if {battery_count} > 0:
+	- Replace the Battery
+		set {battery_count} -= 1
+		set {flashlight_battery} = {max_battery_percent}
+		[sound path="res://Assets/Audio/SFX/BatteryLoad.ogg" volume="0.0"]
+		The battery clicks into place and you have light again, for now!
+		InvestigatorDillon: I have {battery_count} spare batteries.
+		leave InvestigatorDillon
+		...
+		[end_timeline]
+	- Give in to the Darkness...
+		jump GiveIntoTheDarkness/
+else:
+	- Give in to the Darkness...
+		jump GiveIntoTheDarkness/

@@ -1,0 +1,18 @@
+[style name="MyStyle"]
+join InvestigatorDillon 0
+InvestigatorDillon: I found a clue.
+[sound path="res://Assets/Audio/SFX/LightsOutFindClue.ogg" volume="0.0"]
+InvestigatorDillon: Something gruesome has happened in this processing room.
+InvestigatorDillon: The operator seems to have been annihilated in some hideous manner and spread all over the room.
+InvestigatorDillon: Something incredibly dangerous must have been hunting these people.
+InvestigatorDillon: Also, I just recovered a muck covered battery from the light box fixture on the wall. I hope it still works.
+set {battery_count} += 1
+[sound path="res://Assets/Audio/SFX/BatteryLoad.ogg" volume="0.0"]
+InvestigatorDillon: I have {battery_count} spare batteries.
+leave InvestigatorDillon
+set {clues_found} += 1
+if {clues_found} >= 4:
+	jump EnoughClues/
+else:
+	...
+	[end_timeline]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq7u3w4vtr376"]
+
+[ext_resource type="Script" path="res://Scenes/DialogStarter.gd" id="1_p81nj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgc30"]
+size = Vector2(32, 32)
+
+[node name="DialogStarter" type="Area2D"]
+script = ExtResource("1_p81nj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hgc30")
+debug_color = Color(0.996078, 0.960784, 0.682353, 0.701961)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

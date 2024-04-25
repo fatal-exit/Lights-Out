@@ -1,0 +1,11 @@
+[style name="MyStyle"]
+...
+join InvestigatorDillon 0
+InvestigatorDillon: I... think my time has come...
+join TheAbomination 1
+[sound path="res://Assets/Audio/SFX/MonsterGrowl.ogg" volume="0.0"]
+TheAbomination: [Unintelligable Horrifying Noise]
+[sound path="res://Assets/Audio/SFX/CharacterDeath.ogg" volume="0.0"]
+InvestigatorDillon: NOOOOOOOOO!!!!
+set {game_over} = true
+[end_timeline]

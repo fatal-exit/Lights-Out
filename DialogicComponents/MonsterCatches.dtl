@@ -1,0 +1,6 @@
+[style name="MyStyle"]
+...
+[sound path="res://Assets/Audio/SFX/PlayerCaughtFallLightsOut.ogg" volume="0.0"]
+Investigator Dillon runs for his life, but he was too slow. A crimson tentacle lashes from the darkness and strikes his ankle, bringing him crashing to the floor.
+...
+jump GiveIntoTheDarkness/

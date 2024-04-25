@@ -1,0 +1,14 @@
+[style name="MyStyle"]
+join InvestigatorDillon 0
+InvestigatorDillon: I found a clue.
+[sound path="res://Assets/Audio/SFX/LightsOutFindClue.ogg" volume="0.0"]
+InvestigatorDillon:The conveyor belt by the wall has been transporting all kinds of gross appendages and parts from some of the other rooms, and even from far deeper in the facility.
+InvestigatorDillon: As if… to feed something. Something hungry.
+InvestigatorDillon: The conveyor is stopped dead now as the power is now out aside from the emergency lighting.
+leave InvestigatorDillon
+set {clues_found} += 1
+if {clues_found} >= 4:
+	jump EnoughClues/
+else:
+	...
+	[end_timeline]

@@ -1,0 +1,8 @@
+[style name="MyStyle"]
+The Investigator approaches the doors of the facility.
+join InvestigatorDillon 0
+InvestigatorDillon: I cannot leave yet, I have not discovered the truth of what happened here. I must keep searching.
+leave InvestigatorDillon
+Investigator Dillon heads back into the darkness of the facility.
+...
+[end_timeline]

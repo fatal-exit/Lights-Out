@@ -1,0 +1,13 @@
+[style name="MyStyle"]
+join InvestigatorDillon 0
+InvestigatorDillon: I found a clue.
+[sound path="res://Assets/Audio/SFX/LightsOutFindClue.ogg" volume="0.0"]
+InvestigatorDillon: Misplaced items on the floor of the incinerator room. Somebody fled here in a hurry. I wonder what might have caused that.
+InvestigatorDillon: Also, it looks like the employees have been sticking some weird matter into the entrances of some of the furnaces, clogging them up completely, gross.
+leave InvestigatorDillon
+set {clues_found} += 1
+if {clues_found} >= 4:
+	jump EnoughClues/
+else:
+	...
+	[end_timeline]

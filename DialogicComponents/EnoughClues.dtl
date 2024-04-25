@@ -1,0 +1,12 @@
+[style name="MyStyle"]
+join InvestigatorDillon 0
+InvestigatorDillon: I have collected enough clues, we now know for sure what has happened here.
+[sound path="res://Assets/Audio/SFX/MonsterGrowl.ogg" volume="0.0"]
+A noise echoes from the darkness...
+InvestigatorDillon: I must flee, quickly now!
+set {evac_state} = true
+leave 
+Investigator Dillon flees back towards the entrance.
+set {hunted} = true
+...
+[end_timeline]

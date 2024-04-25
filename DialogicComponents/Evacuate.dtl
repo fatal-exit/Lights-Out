@@ -1,0 +1,14 @@
+[style name="MyStyle"]
+The Investigator approaches the doors of the facility.
+join InvestigatorDillon 0
+InvestigatorDillon: I am free from the darkness. I must report my findings, this facility needs to be wiped out with hellfire, or what it contains will kill us all...
+leave InvestigatorDillon
+set {fled} = true
+...
+join TheAbomination 1
+[sound path="res://Assets/Audio/SFX/MonsterGrowl.ogg" volume="0.0"]
+TheAbomination: [Unintelligable Noise]
+leave TheAbomination
+The hideous beast scuttles free of the facility, and off into the night to find its next plan of attack. While you were able to put together what happened, you unknowingly led to a nightmare yet to come.
+set {game_won} = true
+[end_timeline]
